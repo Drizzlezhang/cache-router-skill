@@ -41,6 +41,32 @@ cache-router-skill [options]
 
 - `--help`, `-h` - Show help message
 
+## Supported Providers
+
+This tool supports the following LLM API providers:
+
+| Provider | Caching Strategy | Status |
+|----------|------------------|--------|
+| **Anthropic** | Explicit block cache (cache_control) | ✅ High confidence |
+| **OpenAI** | Auto prefix cache | ✅ High confidence |
+| **Google Vertex AI** | Context resource cache | ✅ High confidence |
+| **Volcengine Ark** | Prefix / Context cache | ✅ High confidence |
+| **Kimi (Moonshot)** | Conservative (safe pass-through) | ⚠️ Low confidence |
+| **SiliconFlow** | Conservative (safe pass-through) | ⚠️ Low confidence |
+| **DeepSeek** | Conservative (safe pass-through) | ⚠️ Low confidence |
+| **OpenRouter** | Conservative (OpenAI compatible) | ⚠️ Low confidence |
+| **Qwen (Aliyun)** | Conservative (safe pass-through) | ⚠️ Low confidence |
+| **GLM (Zhipu)** | Conservative (safe pass-through) | ⚠️ Low confidence |
+
+### Channel Detection
+
+The tool automatically detects the provider based on:
+- `baseUrl` patterns (e.g., `api.anthropic.com`, `api.openai.com`)
+- `model` name prefixes (e.g., `kimi-`, `qwen-`, `glm-`)
+- Explicit `provider` configuration
+
+Unknown providers fall back to **neutral mode** (safe pass-through only).
+
 ## Configuration File
 
 Copy the example configuration:
