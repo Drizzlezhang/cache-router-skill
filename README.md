@@ -52,7 +52,31 @@ cache-router-skill --help
 
 ## Using with Claude Code
 
-This tool provides Claude Code skills for interactive setup:
+### Install as a Local Skill (Recommended for Claude Code Users)
+
+To use this tool as a Claude Code skill (visible in `/skills`):
+
+```bash
+# Create the skill directory
+mkdir -p ~/.claude/skills/cache-router-skill
+
+# Clone into the skill directory
+git clone https://github.com/Drizzlezhang/cache-router-skill.git ~/.claude/skills/cache-router-skill
+
+# Or if you already have the repo cloned
+cp -r /path/to/cache-router-skill/* ~/.claude/skills/cache-router-skill/
+```
+
+Then in Claude Code, run:
+```
+/skills
+```
+
+You should see `cache-router-skill` in the list.
+
+### Interactive Commands
+
+Once installed as a skill, you can use:
 
 ```bash
 # Setup the tool interactively

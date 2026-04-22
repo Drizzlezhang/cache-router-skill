@@ -50,7 +50,31 @@ cache-router-skill --help
 
 ## 与 Claude Code 配合使用
 
-本工具提供 Claude Code skill 用于交互式设置：
+### 安装为本地 Skill（Claude Code 用户推荐）
+
+要将本工具作为 Claude Code skill 使用（在 `/skills` 中可见）：
+
+```bash
+# 创建 skill 目录
+mkdir -p ~/.claude/skills/cache-router-skill
+
+# 克隆到 skill 目录
+git clone https://github.com/Drizzlezhang/cache-router-skill.git ~/.claude/skills/cache-router-skill
+
+# 或如果你已经克隆了仓库
+cp -r /path/to/cache-router-skill/* ~/.claude/skills/cache-router-skill/
+```
+
+然后在 Claude Code 中运行：
+```
+/skills
+```
+
+你应该能在列表中看到 `cache-router-skill`。
+
+### 交互式命令
+
+安装为 skill 后，你可以使用：
 
 ```bash
 # 交互式设置工具
