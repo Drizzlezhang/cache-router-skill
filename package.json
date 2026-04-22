@@ -1,6 +1,6 @@
 {
   "name": "@drizzlezhang/cache-router-skill",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Provider-aware cache router CLI",
   "type": "module",
   "bin": "dist/index.js",
