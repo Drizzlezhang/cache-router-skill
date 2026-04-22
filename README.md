@@ -1,5 +1,7 @@
 # @drizzlezhang/cache-router-skill
 
+[![中文](https://img.shields.io/badge/中文-README-blue)](README.zh-CN.md)
+
 Provider-aware cache router CLI for multi-channel LLM API optimization.
 
 ## Installation
