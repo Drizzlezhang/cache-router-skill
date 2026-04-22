@@ -1,0 +1,19 @@
+{
+  "name": "cache-router-skill",
+  "owner": {
+    "name": "Drizzlezhang"
+  },
+  "metadata": {
+    "description": "Multi-provider cache optimization skill with channel detection and neutral fallback",
+    "version": "0.1.1"
+  },
+  "plugins": [
+    {
+      "name": "cache-router-skill",
+      "source": "./",
+      "description": "Optimize prompt/request cache behavior across Anthropic/OpenAI/Vertex/Kimi/Ark/SiliconFlow/DeepSeek/OpenRouter/Qwen/GLM",
+      "category": "productivity",
+      "tags": ["cache", "routing", "llm", "cost", "prompt"]
+    }
+  ]
+}

@@ -4,6 +4,25 @@
 
 ## 安装
 
+### 方式 1：通过 Claude Code 安装（推荐）
+
+如果你使用 Claude Code，可以通过对话方式安装：
+
+```bash
+# 在 Claude Code 中运行：
+/claude install cache-router-skill
+
+# 或直接通过 npm 和 GitHub Packages 安装：
+npm i -g @drizzlezhang/cache-router-skill
+```
+
+Claude Code 会自动：
+1. 配置 npm 使用 GitHub Packages
+2. 全局安装 CLI 工具
+3. 验证安装是否成功
+
+### 方式 2：手动安装
+
 本包发布在 GitHub Packages。要全局安装：
 
 ### 1. 配置 npm 使用 GitHub Packages
@@ -28,6 +47,26 @@ npm i -g @drizzlezhang/cache-router-skill
 ```bash
 cache-router-skill --help
 ```
+
+## 与 Claude Code 配合使用
+
+本工具提供 Claude Code skill 用于交互式设置：
+
+```bash
+# 交互式设置工具
+/claude setup cache-router-skill
+
+# 获取安装帮助
+/claude install cache-router-skill
+
+# 配置渠道
+/claude configure cache-router-skill
+```
+
+或与 Claude 对话：
+- "安装 cache-router-skill"
+- "配置 cache-router 用于 Anthropic"
+- "显示缓存执行计划"
 
 ## 使用
 

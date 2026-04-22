@@ -1,0 +1,17 @@
+{
+  "name": "cache-router-skill",
+  "version": "0.1.1",
+  "description": "Provider-aware cache router CLI for multi-channel LLM API optimization",
+  "author": {
+    "name": "Drizzlezhang"
+  },
+  "commands": [
+    "./commands/setup.md",
+    "./commands/install.md",
+    "./commands/configure.md"
+  ],
+  "homepage": "https://github.com/Drizzlezhang/cache-router-skill",
+  "repository": "https://github.com/Drizzlezhang/cache-router-skill",
+  "license": "MIT",
+  "keywords": ["cache", "router", "llm", "anthropic", "openai", "vertex", "cli"]
+}

@@ -6,6 +6,25 @@ Provider-aware cache router CLI for multi-channel LLM API optimization.
 
 ## Installation
 
+### Option 1: Install via Claude Code (Recommended)
+
+If you're using Claude Code, you can install this tool conversationally:
+
+```bash
+# In Claude Code, run:
+/claude install cache-router-skill
+
+# Or directly via npm with GitHub Packages:
+npm i -g @drizzlezhang/cache-router-skill
+```
+
+Claude Code will automatically:
+1. Configure npm for GitHub Packages
+2. Install the CLI globally
+3. Verify the installation
+
+### Option 2: Manual Installation
+
 This package is published to GitHub Packages. To install it globally:
 
 ### 1. Configure npm for GitHub Packages
@@ -30,6 +49,26 @@ npm i -g @drizzlezhang/cache-router-skill
 ```bash
 cache-router-skill --help
 ```
+
+## Using with Claude Code
+
+This tool provides Claude Code skills for interactive setup:
+
+```bash
+# Setup the tool interactively
+/claude setup cache-router-skill
+
+# Get installation help
+/claude install cache-router-skill
+
+# Configure providers
+/claude configure cache-router-skill
+```
+
+Or start a conversation with Claude:
+- "Install cache-router-skill"
+- "Configure cache-router for Anthropic"
+- "Show me a cache execution plan"
 
 ## Usage
 
