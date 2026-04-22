@@ -45,18 +45,18 @@ cache-router-skill [options]
 
 This tool supports the following LLM API providers:
 
-| Provider | Caching Strategy | Status |
-|----------|------------------|--------|
-| **Anthropic** | Explicit block cache (cache_control) | ✅ High confidence |
-| **OpenAI** | Auto prefix cache | ✅ High confidence |
-| **Google Vertex AI** | Context resource cache | ✅ High confidence |
-| **Volcengine Ark** | Prefix / Context cache | ✅ High confidence |
-| **Kimi (Moonshot)** | Conservative (safe pass-through) | ⚠️ Low confidence |
-| **SiliconFlow** | Conservative (safe pass-through) | ⚠️ Low confidence |
-| **DeepSeek** | Conservative (safe pass-through) | ⚠️ Low confidence |
-| **OpenRouter** | Conservative (OpenAI compatible) | ⚠️ Low confidence |
-| **Qwen (Aliyun)** | Conservative (safe pass-through) | ⚠️ Low confidence |
-| **GLM (Zhipu)** | Conservative (safe pass-through) | ⚠️ Low confidence |
+| Provider | Caching Strategy |
+|----------|------------------|
+| **Anthropic** | Explicit block cache (cache_control) |
+| **OpenAI** | Auto prefix cache |
+| **Google Vertex AI** | Context resource cache |
+| **Volcengine Ark** | Prefix / Context cache |
+| **Kimi (Moonshot)** | Conservative (safe pass-through) |
+| **SiliconFlow** | Conservative (safe pass-through) |
+| **DeepSeek** | Conservative (safe pass-through) |
+| **OpenRouter** | Conservative (OpenAI compatible) |
+| **Qwen (Aliyun)** | Conservative (safe pass-through) |
+| **GLM (Zhipu)** | Conservative (safe pass-through) |
 
 ### Channel Detection
 
